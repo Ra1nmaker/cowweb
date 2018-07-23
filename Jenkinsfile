@@ -25,7 +25,7 @@ podTemplate(
         git 'https://github.com/Ra1nmaker/cowweb.git'
         container('skaffold-insider') {
           sh """
-            docker login --username=$DOCKER_ID_USR --password=$DOCKER_ID_PSW
+            #docker login --username=$DOCKER_ID_USR --password=$DOCKER_ID_PSW
             skaffold run -p release
           """
         }
