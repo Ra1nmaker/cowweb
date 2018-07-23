@@ -44,7 +44,7 @@ profiles:
           chartPath: kubernetes/helm
           namespace: cowweb-release
           values:
-            image: docker.io/hhayakaw/cowweb
+            image: docker.io/ra1nmaker/cowweb
           setValues:
             replicaCount: 2
             ingress.enabled: true
